@@ -1,0 +1,429 @@
+* {
+    font-family: 'Inter';
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f8;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 2;
+}
+
+.seguindo-procurar {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    min-width: 265px;
+}
+
+.seguindo-procurar img {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.seguindo-procurar img:hover {
+    scale: 1.05;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.seguindo-procurar svg {
+    height: 25px;
+    width: 25px;
+    padding: 5px 0px 1px 5px;
+    margin-left: 10px
+}
+
+.seguindo-procurar svg:hover {
+    background-color: #e6e6ea;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tabs__label {
+    padding: 15px 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s linear 0s;
+}
+
+.tabs__label:hover {
+    color: #5c16c5;
+}
+
+.tabs__radio {
+    display: none;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.pesquisa input {
+    padding: 9.5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 350px;
+}
+
+.pesquisa input:hover {
+    border: 1px solid #5c16c5;
+}
+
+.pesquisa button {
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    background-color: #ededef;
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background-color: #e3e3e6;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 30%;
+    gap: 5px
+}
+
+.icones svg {
+    padding: 5px 2px 1px 7px;
+    width: 25px;
+    height: 25px;
+}
+
+.icones svg:last-child {
+    margin-right: 10px;
+}
+
+.icones svg:hover {
+    background-color: #e6e6ea;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.container-geral {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.aba-lateral {
+    min-height: 94.6vh;
+    width: 230px;
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: #efeff1;
+    z-index: 1;
+}
+
+.aba-lateral h3 {
+    margin: 15px 0px -5px 10px;
+}
+
+.aba-lateral h5 {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.container-lives {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+
+.container-lives:hover {
+    background-color: #e6e6ea;
+}
+
+.container-lives img {
+    margin-left: 4px;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.titulo-tema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.titulo-tema p:nth-child(1) {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    line-height: 15px;
+}
+
+.titulo-tema p:last-child {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    line-height: 15px;
+    color: #53535F;
+}
+
+.red-point {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 25px;
+}
+
+.container-lives span {
+    margin-left: 3px;
+    font-size: 13px;
+}
+
+#off {
+    filter: saturate(0);
+}
+
+/*PART LEO*/
+main{
+    width: 100%;
+    /* background-color: #794bc0; */
+    background-image: url(../images/fundo-roxo.jpg);
+}
+
+section.section-main-geral img{
+    width: 100%;
+    height: 520px;
+}
+
+.caixas-flutuantes{
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+    width: 80%;
+}
+
+main div.ultima-transmissao{
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+}
+
+div.ultima-transmissao p:not(:last-child){
+    margin-left: 30px;
+}
+
+div p.status-usuario{
+    width: 4rem;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 6rem;
+}
+
+div p.transmissao{
+    font-size: 20px;
+}
+
+div.ativar-notificacao{
+    width: 50%;
+    display: flex;
+    gap: 4px;
+    padding: 5px;;
+    color: #5c16c5;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+div.ativar-notificacao:hover{
+    cursor: pointer;
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+div.ativar-notificacao svg{
+    width: 20px;
+    height: 20px;
+    fill: #5c16c5;
+}
+
+main div.ultima-transmissao a{
+    text-decoration: none;
+    color: #5c16c5;
+}
+
+main div.video-informativo{
+    width: 40rem;
+    height: 20rem;
+}
+
+main div.video-informativo img{
+    width: 100%;
+    height: 100%;
+}
+
+section.caixa-perfil-usuario{
+    width: 96%;
+    height: 7rem;
+    background-color: #f7f7f8;
+    padding-top: 0.1px; /*Impede combinação margens */
+}
+
+div.informacoes-basicas{
+    width: 96%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.container-img-perfil {
+    display: flex;
+}
+div.container-img-perfil img{
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    padding: 1px;
+    border: 3px double black;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+div.informacoes-basicas img:hover{
+    border-width: 4px;
+}
+
+div.informacoes-basicas a{
+    text-decoration: none;
+    color: black;
+}
+
+div.informacoes-basicas a:hover{
+    text-decoration: underline #794bc0;
+}
+
+div.informacoes-basicas p{
+    font-size: 14px;
+}
+
+div.nome-e-seguidores{
+    margin-top: 10px;
+}
+
+div.seguir-inscrever{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 18px;
+    margin-right: 1rem;
+}
+
+div.seguir{
+    width: 4.5rem;
+    height: 1.3rem;
+    display: flex;
+    background-color: #794bc0;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+
+div.seguir:hover{
+    cursor: pointer;
+}
+
+div.seguir svg{
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+div.inscrever{
+    width: 7.7rem;
+    height: 1.3rem;
+    display: flex;
+    background-color: rgb(216, 216, 216);
+    gap: 8px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+div.inscrever:hover{
+    cursor: pointer;
+}
+
+div.inscrever svg{
+    width: 20px;
+    height: 20px;
+}
+
+svg.tres-pontos{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+svg.tres-pontos:hover{
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+}
+
+section.conteudo-usuario{
+    width: 96%;
+    height: 268px;
+    background-color: white;
+    padding-top: 0.1px; /*Impedir margem*/
+}
+
+.margin{
+    margin: 0 1rem 10px 2rem;
+}
+
+section.conteudo-usuario h2{
+    margin-top: 2rem;
+}

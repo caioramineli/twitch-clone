@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter'
+}
+
+.container-formulario{
+    background-color: rgb(170, 170, 170);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+}
+
+.container-formulario form label{
+    font-weight: bold;
+    margin: 5px;
+    width: 80%;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.container-formulario .logo-entrar {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.container-formulario .logo-entrar svg{
+    width: 45px;
+    fill: #9147ff;
+}
+
+.container-formulario input{
+    width: 80%;
+    border-radius: 4px;
+    outline: 0;
+    padding: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.container-formulario select{
+    width: 80%;
+    border-radius: 4px;
+    outline: 0;
+    padding: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.container-formulario form input:focus{
+    box-shadow: 0px 0px 1px 3px #772ce8;
+}
+
+#Cadastrar{
+    background-color: #9147FF;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+#Cadastrar:hover{
+    background-color: #772ce8;
+}
